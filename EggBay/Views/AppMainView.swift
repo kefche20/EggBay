@@ -9,7 +9,27 @@ import SwiftUI
 
 struct AppMainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            DiscoveryView()
+                .tabItem { Label("Discovery", systemImage: "safari")
+                }
+            
+            CategoriesView()
+                .tabItem { Label("Categories", systemImage: "list.dash")
+                }
+            
+            EventsView()
+                .tabItem { Label("Events", systemImage: "calendar")
+                }
+            
+            FavoritesView()
+                .tabItem { Label("Favorites", systemImage: "heart")
+                }
+            
+            OrdersView()
+                .tabItem { Label("Orders", systemImage: "truck.box")
+                }
+        }
     }
 }
 

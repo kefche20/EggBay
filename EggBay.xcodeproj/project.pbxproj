@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220915002B861D250092292A /* AppMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220914FF2B861D250092292A /* AppMainView.swift */; };
+		220915042B861FC80092292A /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915032B861FC80092292A /* DiscoveryView.swift */; };
+		220915062B861FD80092292A /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915052B861FD80092292A /* CategoriesView.swift */; };
+		220915082B861FE30092292A /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915072B861FE30092292A /* EventsView.swift */; };
+		2209150A2B861FEB0092292A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915092B861FEB0092292A /* FavoritesView.swift */; };
+		2209150C2B861FF20092292A /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209150B2B861FF20092292A /* OrdersView.swift */; };
 		9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7492B861876008E1FF4 /* EggBayApp.swift */; };
 		9330D74C2B861876008E1FF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D74B2B861876008E1FF4 /* ContentView.swift */; };
 		9330D74E2B861877008E1FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330D74D2B861877008E1FF4 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220914FF2B861D250092292A /* AppMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainView.swift; sourceTree = "<group>"; };
+		220915032B861FC80092292A /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
+		220915052B861FD80092292A /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		220915072B861FE30092292A /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		220915092B861FEB0092292A /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		2209150B2B861FF20092292A /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
 		9330D7462B861876008E1FF4 /* EggBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9330D7492B861876008E1FF4 /* EggBayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggBayApp.swift; sourceTree = "<group>"; };
 		9330D74B2B861876008E1FF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220915012B861D2A0092292A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				220914FF2B861D250092292A /* AppMainView.swift */,
+				220915032B861FC80092292A /* DiscoveryView.swift */,
+				220915052B861FD80092292A /* CategoriesView.swift */,
+				220915072B861FE30092292A /* EventsView.swift */,
+				220915092B861FEB0092292A /* FavoritesView.swift */,
+				2209150B2B861FF20092292A /* OrdersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9330D73D2B861876008E1FF4 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +78,7 @@
 			children = (
 				9330D7492B861876008E1FF4 /* EggBayApp.swift */,
 				9330D74B2B861876008E1FF4 /* ContentView.swift */,
+				220915012B861D2A0092292A /* Views */,
 				9330D74D2B861877008E1FF4 /* Assets.xcassets */,
 				9330D74F2B861877008E1FF4 /* Preview Content */,
 			);
@@ -138,7 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9330D74C2B861876008E1FF4 /* ContentView.swift in Sources */,
+				220915042B861FC80092292A /* DiscoveryView.swift in Sources */,
 				9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */,
+				220915062B861FD80092292A /* CategoriesView.swift in Sources */,
+				2209150A2B861FEB0092292A /* FavoritesView.swift in Sources */,
+				2209150C2B861FF20092292A /* OrdersView.swift in Sources */,
+				220915002B861D250092292A /* AppMainView.swift in Sources */,
+				220915082B861FE30092292A /* EventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
