@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var loginViewModel = LoginViewModel()
+    @StateObject var mainViewModel = MainViewModel()
+    
     var body: some View {
-        AppMainView()
+        if mainViewModel.isLoggedIn {
+            AppMainView()
+        }
+        else
+        {
+            // Implement login view here
+        }
     }
 }
 
