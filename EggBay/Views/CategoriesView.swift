@@ -9,7 +9,14 @@ import SwiftUI
 
 struct CategoriesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                Text("product 1")
+                Text("product 2")
+                Text("product 3")
+            }
+            .navigationTitle("Categories")
+        }
     }
 }
 
