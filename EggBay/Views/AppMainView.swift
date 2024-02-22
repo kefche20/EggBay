@@ -8,28 +8,55 @@
 import SwiftUI
 
 struct AppMainView: View {
+    @State private var showingDetail = false
+    
     var body: some View {
-        TabView{
-            DiscoveryView()
-                .tabItem { Label("Discovery", systemImage: "safari")
+            HStack(spacing:30, content: {
+                HStack(alignment: .top, content: {
+                    Text("EggBay")
+                        .font(.title.bold())
+                })
+                Spacer()
+               
+                Button {
+                    showingDetail = true
+                } label: {
+                    Image("profile")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                } .sheet(isPresented:$showingDetail) {
+                    AccountView(onDoneSuccess: {
+                        showingDetail = false
+                    })
                 }
-            
-            CategoriesView()
-                .tabItem { Label("Categories", systemImage: "list.dash")
-                }
-            
-            EventsView()
-                .tabItem { Label("Events", systemImage: "calendar")
-                }
-            
-            FavoritesView()
-                .tabItem { Label("Favorites", systemImage: "heart")
-                }
-            
-            OrdersView()
-                .tabItem { Label("Orders", systemImage: "truck.box")
-                }
-        }
+              
+            })
+            .padding(.horizontal)
+        
+            TabView{
+                DiscoveryView()
+                    .tabItem { Label("Discovery", systemImage: "safari")
+                    }
+                
+                CategoriesView()
+                    .tabItem { Label("Categories", systemImage: "list.dash")
+                    }
+                
+                EventsView()
+                    .tabItem { Label("Events", systemImage: "calendar")
+                    }
+                
+                FavoritesView()
+                    .tabItem { Label("Favorites", systemImage: "heart")
+                    }
+                
+                OrdersView()
+                    .tabItem { Label("Orders", systemImage: "truck.box")
+                    }
+            }
+       
     }
 }
 

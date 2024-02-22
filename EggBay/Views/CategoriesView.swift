@@ -11,14 +11,14 @@ struct CategoriesView: View {
     var body: some View {
         NavigationStack {
             List {
-                Text("product 1")
-                Text("product 2")
-                Text("product 3")
+                ProductRow()
+                ProductRow()
+                ProductRow()
             }
-            .navigationTitle("Categories")
+            .listStyle(.insetGrouped)
+            }
         }
     }
-}
 
 #Preview {
     CategoriesView()

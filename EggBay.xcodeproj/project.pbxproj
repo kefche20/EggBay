@@ -13,6 +13,7 @@
 		220915082B861FE30092292A /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915072B861FE30092292A /* EventsView.swift */; };
 		2209150A2B861FEB0092292A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915092B861FEB0092292A /* FavoritesView.swift */; };
 		2209150C2B861FF20092292A /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209150B2B861FF20092292A /* OrdersView.swift */; };
+		227C4DC42B875FEA002D5F65 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C4DC32B875FEA002D5F65 /* ProductRow.swift */; };
 		9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7492B861876008E1FF4 /* EggBayApp.swift */; };
 		9330D74C2B861876008E1FF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D74B2B861876008E1FF4 /* ContentView.swift */; };
 		9330D74E2B861877008E1FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330D74D2B861877008E1FF4 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		220915072B861FE30092292A /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		220915092B861FEB0092292A /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		2209150B2B861FF20092292A /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		227C4DC32B875FEA002D5F65 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		9330D7462B861876008E1FF4 /* EggBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9330D7492B861876008E1FF4 /* EggBayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggBayApp.swift; sourceTree = "<group>"; };
 		9330D74B2B861876008E1FF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				2209150B2B861FF20092292A /* OrdersView.swift */,
 				9330D7592B86215A008E1FF4 /* AccountView.swift */,
 				9330D7692B86336D008E1FF4 /* LoginView.swift */,
+				227C4DC32B875FEA002D5F65 /* ProductRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				9330D75C2B862448008E1FF4 /* ProfileNavigationLink.swift in Sources */,
 				220915042B861FC80092292A /* DiscoveryView.swift in Sources */,
 				9330D76A2B86336D008E1FF4 /* LoginView.swift in Sources */,
+				227C4DC42B875FEA002D5F65 /* ProductRow.swift in Sources */,
 				9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */,
 				220915062B861FD80092292A /* CategoriesView.swift in Sources */,
 				9330D7662B862A60008E1FF4 /* MainViewModel.swift in Sources */,

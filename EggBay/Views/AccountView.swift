@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AccountView: View {
+    var onDoneSuccess: () -> Void
+    
     var body: some View {
         NavigationStack {
             List {
@@ -15,10 +17,18 @@ struct AccountView: View {
                     ProfileNavigationLink(username: "demodemo", email: "plsfix@me.com")
                 }
             }
+            .navigationBarTitle("Account", displayMode: .inline)
+            .toolbar {
+                Button("Done") {
+                    onDoneSuccess()
+                }
+            }
+            
         }
+        
     }
 }
 
 #Preview {
-    AccountView()
+    AccountView(onDoneSuccess: {})
 }
