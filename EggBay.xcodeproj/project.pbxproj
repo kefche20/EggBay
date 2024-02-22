@@ -23,6 +23,7 @@
 		9330D7642B8629E4008E1FF4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7632B8629E4008E1FF4 /* LoginViewModel.swift */; };
 		9330D7662B862A60008E1FF4 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7652B862A60008E1FF4 /* MainViewModel.swift */; };
 		9330D7682B862AAE008E1FF4 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7672B862AAE008E1FF4 /* AccountViewModel.swift */; };
+		9330D76A2B86336D008E1FF4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7692B86336D008E1FF4 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		9330D7632B8629E4008E1FF4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		9330D7652B862A60008E1FF4 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9330D7672B862AAE008E1FF4 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		9330D7692B86336D008E1FF4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				220915092B861FEB0092292A /* FavoritesView.swift */,
 				2209150B2B861FF20092292A /* OrdersView.swift */,
 				9330D7592B86215A008E1FF4 /* AccountView.swift */,
+				9330D7692B86336D008E1FF4 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				9330D74C2B861876008E1FF4 /* ContentView.swift in Sources */,
 				9330D75C2B862448008E1FF4 /* ProfileNavigationLink.swift in Sources */,
 				220915042B861FC80092292A /* DiscoveryView.swift in Sources */,
+				9330D76A2B86336D008E1FF4 /* LoginView.swift in Sources */,
 				9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */,
 				220915062B861FD80092292A /* CategoriesView.swift in Sources */,
 				9330D7662B862A60008E1FF4 /* MainViewModel.swift in Sources */,

@@ -8,12 +8,13 @@
 import SwiftUI
 
 class LoginViewModel: ObservableObject {
-    @Published var name = ""
-    @Published var password = ""
+    @Published var name: String = ""
+    @Published var password: String = ""
+    @Published var isLoggedIn: Bool = false
     
     func login(completion: @escaping (Bool) -> Void)
     {
-        let isLoggedIn = !name.isEmpty
+        isLoggedIn = !name.isEmpty && !password.isEmpty
         completion(isLoggedIn)
     }
 }

@@ -10,18 +10,24 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var loginViewModel = LoginViewModel()
     @StateObject var mainViewModel = MainViewModel()
+    @State private var showingLoginMenu = false
     
     var body: some View {
-        if mainViewModel.isLoggedIn {
+        
+        VStack {
             AppMainView()
+        }.onAppear{
+            if !loginViewModel.isLoggedIn
+            {
+                showingLoginMenu = true
+            }
         }
-        else
-        {
-            // Implement login view here
-        }
+        .sheet(isPresented: $showingLoginMenu) {
+            LoginView(viewModel: loginViewModel, onLoginSuccess: {
+                showingLoginMenu = false
+            })        }
     }
 }
-
 #Preview {
     ContentView()
 }
