@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct AppMainView: View {
+    @Environment(ModelData.self) var modelData
     @State private var showingDetail = false
+    @State private var selectedTab: String = "Discovery"
     
     var body: some View {
-            HStack(spacing:30, content: {
-                HStack(alignment: .top, content: {
-                    Text("EggBay")
-                        .font(.title.bold())
-                })
+        VStack {
+            HStack(spacing:30) {
+                Text(selectedTab)
+                    .font(.title.bold())
                 Spacer()
-               
                 Button {
                     showingDetail = true
                 } label: {
@@ -31,32 +31,31 @@ struct AppMainView: View {
                         showingDetail = false
                     })
                 }
-              
-            })
+            }
             .padding(.horizontal)
-        
-            TabView{
+            
+            TabView(selection: $selectedTab){
                 DiscoveryView()
-                    .tabItem { Label("Discovery", systemImage: "safari")
-                    }
+                    .tabItem { Label("Discovery", systemImage: "safari") }
+                    .tag("Discovery")
                 
                 CategoriesView()
-                    .tabItem { Label("Categories", systemImage: "list.dash")
-                    }
+                    .tabItem { Label("Categories", systemImage: "list.dash") }
+                    .tag("Categories")
                 
                 EventsView()
-                    .tabItem { Label("Events", systemImage: "calendar")
-                    }
+                    .tabItem { Label("Events", systemImage: "calendar") }
+                    .tag("Events")
                 
                 FavoritesView()
-                    .tabItem { Label("Favorites", systemImage: "heart")
-                    }
+                    .tabItem { Label("Favorites", systemImage: "heart") }
+                    .tag("Favorites")
                 
                 OrdersView()
-                    .tabItem { Label("Orders", systemImage: "truck.box")
-                    }
+                    .tabItem { Label("Orders", systemImage: "truck.box") }
+                    .tag("Orders")
             }
-       
+        }
     }
 }
 

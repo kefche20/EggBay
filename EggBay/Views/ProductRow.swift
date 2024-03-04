@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct ProductRow: View {
+    var product: Product
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading){
-                Text("Cucumber")
-                Text("$6")
+                Text(product.kind)
             }
             Spacer()
-            Image("cucumber")
+            Image(product.photoURL)
                 .resizable()
                 .frame(width: 50, height: 50)
+                .cornerRadius(5)
         }.fontWeight(.bold)
     }
 }
 
 #Preview {
-    ProductRow()
+    let products = ModelData().products
+    return Group {
+        ProductRow(product: products[0])
+    }
 }

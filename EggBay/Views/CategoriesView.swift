@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct CategoriesView: View {
+    @Environment(ModelData.self) var modelData
+    
     var body: some View {
         NavigationStack {
             List {
-                ProductRow()
-                ProductRow()
-                ProductRow()
-            }
-            .listStyle(.insetGrouped)
+                ForEach(modelData.products, id: \.self) { product in
+                    NavigationLink {
+                        ProductDetail(product: product)
+                    } label: {
+                        ProductRow(product: product)
+                    }
+                }
+                
             }
         }
     }
+}
 
 #Preview {
     CategoriesView()
+        .environment(ModelData())
 }

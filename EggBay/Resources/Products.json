@@ -1,0 +1,178 @@
+[
+ {
+   "ID": 1,
+   "category": "Vegetables",
+   "kind": "Cucumbers",
+   "shopID": 4,
+   "photoURL": "cucumber",
+   "description": "Our cucumbers are of the Hot House Cuke variety, and have been just picked."
+ },
+ {
+   "ID": 2,
+   "category": "Vegetables",
+   "kind": "Tomatoes",
+   "shopID": 4,
+   "photoURL": "tomatoes",
+   "description": "Fresh Roma tomatoes - perfect for your salads, sandwiches or sauses!"
+ },
+ {
+   "ID": 3,
+   "category": "Vegetables",
+   "kind": "Potatoes",
+   "shopID": 1,
+   "photoURL": "potatoes",
+   "description": "Russet potatoes - amazing for fries, salads, or whatever you like! Fresh out of Dutch soil."
+ },
+ {
+   "ID": 4,
+   "category": "Vegetables",
+   "kind": "Carrots",
+   "shopID": 1,
+   "photoURL": "carrots",
+   "description": "Imperator carrots straight from our garden."
+ },
+ {
+   "ID": 5,
+   "category": "Vegetables",
+   "kind": "Corn",
+   "shopID": 4,
+   "photoURL": "corn",
+   "description": "Sweet corn, best for salads, corn pudding, or whatever you like!"
+ },
+ {
+   "ID": 6,
+   "category": "Vegetables",
+   "kind": "Garlic",
+   "shopID": 3,
+   "photoURL": "garlic",
+   "description": "Chesnok red garlic - with a sweet taste, perfect for your salads!"
+ },
+ {
+   "ID": 7,
+   "category": "Fruits",
+   "kind": "Pears",
+   "shopID": 2,
+   "photoURL": "pears",
+   "description": "Conference pears - sweet and ripe, for direct consumation!"
+ },
+ {
+   "ID": 8,
+   "category": "Fruits",
+   "kind": "Apples",
+   "shopID": 2,
+   "photoURL": "apples",
+   "description": "Granny smith green apples - amazing healthy fruit!"
+ },
+ {
+   "ID": 9,
+   "category": "Fruits",
+   "kind": "Strawberries",
+   "shopID": 4,
+   "photoURL": "strawberries",
+   "description": "Strawberries from our garden - small and sweet, ready for consumption"
+ },
+ {
+   "ID": 10,
+   "category": "Fruits",
+   "kind": "Plums",
+   "shopID": 4,
+   "photoURL": "plums",
+   "description": "Our old farm sells plums for over 20 years already - come and try the sweet taste of the fruit!"
+ },
+ {
+   "ID": 11,
+   "category": "Fruits",
+   "kind": "Peaches",
+   "shopID": 4,
+   "photoURL": "peaches",
+   "description": "Amazing fuzzy peaches - you will miss the taste and come back for more!"
+ },
+ {
+   "ID": 12,
+   "category": "Fruits",
+   "kind": "Oranges",
+   "shopID": 3,
+   "photoURL": "oranges",
+   "description": "Oranges from the local Valkenswaard primitive greenhouse :)"
+ },
+ {
+   "ID": 13,
+   "category": "Meat",
+   "kind": "Chicken",
+   "shopID": 2,
+   "photoURL": "chicken",
+   "description": "Meat from our chicken farm down here in Best"
+ },
+ {
+   "ID": 14,
+   "category": "Meat",
+   "kind": "Duck",
+   "shopID": 1,
+   "photoURL": "ducks",
+   "description": "Meat from our ducks out here near lake Stevenson"
+ },
+ {
+   "ID": 15,
+   "category": "Meat",
+   "kind": "Beef",
+   "shopID": 3,
+   "photoURL": "beef",
+   "description": "Our farm specialises in cattles since 1968 - come and have a trip around our field yourself!"
+ },
+ {
+   "ID": 16,
+   "category": "Seafood",
+   "kind": "Trout",
+   "shopID": 1,
+   "photoURL": "trout",
+   "description": "Provided from our fisherman up north."
+ },
+ {
+   "ID": 17,
+   "category": "Seafood",
+   "kind": "Seabass",
+   "shopID": 2,
+   "photoURL": "seabass",
+   "description": "Provided from our fisherman up north."
+ },
+ {
+   "ID": 18,
+   "category": "Meat",
+   "kind": "Pork",
+   "shopID": 3,
+   "photoURL": "pigs",
+   "description": "Our swine farm is very popular with the locals here in Voorthuizen!"
+ },
+ {
+   "ID": 19,
+   "category": "Dairy",
+   "kind": "Eggs",
+   "shopID": 1,
+   "photoURL": "eggs",
+   "description": "Come check out our chicken farm, and grab some eggs for yourself!"
+ },
+ {
+   "ID": 20,
+   "category": "Dairy",
+   "kind": "Cow milk",
+   "shopID": 2,
+   "photoURL": "cowmilk",
+   "description": "Fresh dairy products in our farm at all times - come and see!"
+ },
+ {
+   "ID": 21,
+   "category": "Dairy",
+   "kind": "Quark",
+   "shopID": 1,
+   "photoURL": "quark",
+   "description": "Fresh dairy products in our farm at all times - come and see!"
+ },
+ {
+   "ID": 22,
+   "category": "Dairy",
+   "kind": "Cheese",
+   "shopID": 3,
+   "photoURL": "cheese",
+   "description": "Fresh dairy products in our farm at all times - come and see!"
+ }
+]
