@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Product: Hashable, Codable {
     var ID: Int

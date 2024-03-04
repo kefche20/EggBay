@@ -8,22 +8,20 @@
 import SwiftUI
 
 struct DiscoveryView: View {
+    @Environment(ModelData.self) var modelData
     var body: some View {
-        List
-        {
-            LargeBlock(location: "Eindhoven", shopname: "Farm name1", description: "Shop1")
-                .listRowSeparator(.hidden)
-            LargeBlock(location: "Amsterdam", shopname: "Farm name2", description: "Shop2")
-                .listRowSeparator(.hidden)
-            LargeBlock(location: "Tilburg", shopname: "Farm name3", description: "Shop3")
-                .listRowSeparator(.hidden)
+        
+        NavigationView {
+            ScrollView{
+                VStack(alignment: .leading)
+                {
+                    ForEach(modelData.farms, id: \.self) { farm in
+                        NavigationLink(destination:FarmView(farm: farm)) {
+                            LargeBlock(location: farm.location, shopname: farm.name, description: farm.description)
+                            
+                        }}
+                }
+            }
         }
-        .scrollContentBackground(.hidden)
-
-
     }
-}
-
-#Preview {
-    DiscoveryView()
 }
