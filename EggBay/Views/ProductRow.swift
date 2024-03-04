@@ -12,15 +12,15 @@ struct ProductRow: View {
     
     var body: some View {
         HStack {
-            VStack(alignment: .leading){
-                Text(product.kind)
-            }
-            Spacer()
             Image(product.photoURL)
                 .resizable()
                 .frame(width: 50, height: 50)
                 .cornerRadius(5)
-        }.fontWeight(.bold)
+            Text(product.kind)
+                .fontWeight(.medium)
+          
+            Spacer()
+        }
     }
 }
 
@@ -30,3 +30,4 @@ struct ProductRow: View {
         ProductRow(product: products[0])
     }
 }
+
