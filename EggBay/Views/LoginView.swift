@@ -13,16 +13,18 @@ struct LoginView: View {
     
     var body: some View {
         // To be replaced with Sign in with Apple
-        VStack {
-            
+        VStack(alignment: .leading) {
+            Text("EggBay")
+                .font(.largeTitle)
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .padding(.bottom, 50)
             TextField("Name", text: $viewModel.name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
             SecureField("Password", text: $viewModel.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            Divider()
-            Button("Login") {
+                .padding(.bottom, 30)
+         
+            Button {
                 viewModel.login { isLoggedIn in
                     if isLoggedIn {
                         print("Login successful")
@@ -33,15 +35,29 @@ struct LoginView: View {
                         print("Login failed")
                     }
                 }
-            } .padding()
+            } label: {
+                Text("Login")
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+            .navigationTitle("EggBay")
+            
+            Button {
+            } label: {
+                Text("Sign Up")
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
         }
-        .padding()
-        .navigationTitle("Login")
+        .padding(30)
+        
         .interactiveDismissDisabled()
     }
     
 }
 
 //#Preview {
-//    LoginView(viewModel: LoginViewModel())
+//    LoginView(viewModel: <#LoginViewModel#>)
 //}
