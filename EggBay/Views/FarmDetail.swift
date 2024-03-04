@@ -8,25 +8,31 @@
 import SwiftUI
 import MapKit
 
-struct FarmView: View {
+struct FarmDetail: View {
     let farm: Farm
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text(farm.name)
-                .font(.title)
-                .fontWeight(.bold)
-            
-            Text(farm.description)
-                .font(.body)
-                .foregroundColor(.secondary)
-            
-            LocationMapView(location: farm.location)
-                .frame(height: 200)
-                .cornerRadius(10)
-                .padding(.bottom, 16)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                Text(farm.name)
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Text(farm.description)
+                    .font(.body)
+                    .foregroundColor(.secondary)
+                
+                Image("peaches")
+                    .resizable()
+                    .frame(maxWidth: .infinity ,maxHeight: 150)
+                    .cornerRadius(5)
+        
+                LocationMapView(location: farm.location)
+                    .frame(height: 200)
+                    .cornerRadius(10)
+            }
+            .padding()
         }
-        .padding()
     }
     
     struct LocationMapView: UIViewRepresentable {
@@ -60,5 +66,5 @@ struct FarmView: View {
     }
 }
 #Preview {
-    FarmView(farm: Farm(ID: 1, name: "FarmName", location: "Momchilovtsi", tel: 088869434, description: "Farm fat description"))
+    FarmDetail(farm: Farm(ID: 1, name: "FarmName", location: "Momchilovtsi", tel: 088869434, description: "Planet Green is the older farm in Lorem Ipsum, dating back from 1888! Come and see how real food is made!"))
 }

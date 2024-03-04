@@ -20,7 +20,6 @@ struct CategoriesView: View {
                         ProductRow(product: product)
                     }
                 }
-                
             }
         }
     }

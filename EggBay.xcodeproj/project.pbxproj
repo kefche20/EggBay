@@ -31,7 +31,7 @@
 		9330D7682B862AAE008E1FF4 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7672B862AAE008E1FF4 /* AccountViewModel.swift */; };
 		9330D76A2B86336D008E1FF4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7692B86336D008E1FF4 /* LoginView.swift */; };
 		93AB32272B95FA570026CE37 /* LargeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB32262B95FA570026CE37 /* LargeBlock.swift */; };
-		93AB32292B9604940026CE37 /* FarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB32282B9604940026CE37 /* FarmView.swift */; };
+		93AB32292B9604940026CE37 /* FarmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB32282B9604940026CE37 /* FarmDetail.swift */; };
 		93AB322B2B9606EC0026CE37 /* Farm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB322A2B9606EC0026CE37 /* Farm.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,7 @@
 		9330D7672B862AAE008E1FF4 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		9330D7692B86336D008E1FF4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		93AB32262B95FA570026CE37 /* LargeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeBlock.swift; sourceTree = "<group>"; };
-		93AB32282B9604940026CE37 /* FarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmView.swift; sourceTree = "<group>"; };
+		93AB32282B9604940026CE37 /* FarmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmDetail.swift; sourceTree = "<group>"; };
 		93AB322A2B9606EC0026CE37 /* Farm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,7 @@
 				9330D7692B86336D008E1FF4 /* LoginView.swift */,
 				227C4DC32B875FEA002D5F65 /* ProductRow.swift */,
 				22CE753D2B9601DF0064FCAD /* ProductDetail.swift */,
-				93AB32282B9604940026CE37 /* FarmView.swift */,
+				93AB32282B9604940026CE37 /* FarmDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 				9330D7642B8629E4008E1FF4 /* LoginViewModel.swift in Sources */,
 				220915002B861D250092292A /* AppMainView.swift in Sources */,
 				220915082B861FE30092292A /* EventsView.swift in Sources */,
-				93AB32292B9604940026CE37 /* FarmView.swift in Sources */,
+				93AB32292B9604940026CE37 /* FarmDetail.swift in Sources */,
 				9330D75F2B862982008E1FF4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

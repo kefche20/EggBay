@@ -55,6 +55,12 @@ struct AppMainView: View {
                     .tabItem { Label("Orders", systemImage: "truck.box") }
                     .tag("Orders")
             }
+            .onAppear {
+                if #available(iOS 15.0, *) {
+                    let appearance = UITabBarAppearance()
+                    UITabBar.appearance().scrollEdgeAppearance = appearance
+                }
+            }
         }
     }
 }

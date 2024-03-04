@@ -12,21 +12,21 @@ struct ProductDetail: View {
     
     var body: some View {
         ScrollView {
-            Image(product.photoURL)
-                .resizable()
-                .frame(height: 150)
-                .cornerRadius(5)
-            
-            VStack(alignment: .leading) {
-                Text(product.kind)
-                             .font(.title)
-                             .fontWeight(.bold)
-
-                Text(product.description)
-                             .font(.body)
-                             .foregroundColor(.secondary)
-            }
-            .padding()
+                VStack(alignment: .leading, spacing: 16) {
+                    Text(product.kind)
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Text(product.description)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                    
+                    Image(product.photoURL)
+                        .resizable()
+                        .frame(maxWidth: .infinity ,maxHeight: 150)
+                        .cornerRadius(5)
+                }
+                .padding()
         }
     }
 }
