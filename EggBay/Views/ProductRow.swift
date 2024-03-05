@@ -15,7 +15,7 @@ struct ProductRow: View {
             Image(product.photoURL)
                 .resizable()
                 .frame(width: 50, height: 50)
-                .cornerRadius(5)
+                .cornerRadius(10)
             Text(product.kind)
                 .fontWeight(.medium)
           

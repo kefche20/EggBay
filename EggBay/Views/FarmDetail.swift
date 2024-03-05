@@ -11,9 +11,10 @@ import MapKit
 struct FarmDetail: View {
     @Environment(ModelData.self) var modelData
     let farm: Farm
+    
     var body: some View {
-        ScrollView(){
-           LazyVStack(alignment: .leading, spacing: 6) {
+        ScrollView(showsIndicators: false){
+           LazyVStack(alignment: .leading, spacing: 8) {
                 Text(farm.name)
                     .font(.title)
                     .fontWeight(.bold)
@@ -26,20 +27,20 @@ struct FarmDetail: View {
                     .frame(height: 200)
                     .cornerRadius(10)
                     .padding(.bottom, 16)
+               
                Spacer()
-                ForEach(modelData.products.filter { $0.shopID == farm.ID }, id: \.self) { product in
+               
+               ForEach(modelData.products.filter { $0.shopID == farm.ID }, id: \.self) { product in
                         
                         NavigationLink(destination: ProductDetail(product: product)) {
                                 HStack{
                                     ProductRow(product: product)
                                     Image(systemName: "chevron.right")
-                                }.contentShape(Rectangle())
+                                }.contentShape(Rectangle())                
                             }
                     }
                 }.scaledToFit()
                 .padding(0)
-                    
-               // }
             }
             .padding()
         }

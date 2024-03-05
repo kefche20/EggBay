@@ -44,7 +44,7 @@ struct LargeBlock: View {
       }
       .frame(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.width * 1.1)
       .background(Color(UIColor.tintColor))
-      .clipShape(RoundedRectangle(cornerRadius: 20))
+      .clipShape(RoundedRectangle(cornerRadius: 10))
       .padding(.vertical, 8)
     }
 }
