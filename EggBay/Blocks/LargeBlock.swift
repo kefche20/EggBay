@@ -11,11 +11,13 @@ struct LargeBlock: View {
     let location: String
     let shopname: String
     let description: String
+    let photoURL: String
     
-    init(location: String, shopname: String, description: String) {
+    init(location: String, shopname: String, description: String, photoURL: String) {
         self.location = location
         self.shopname = shopname
         self.description = description
+        self.photoURL = photoURL
     }
     
     var body: some View {
@@ -30,12 +32,10 @@ struct LargeBlock: View {
             .foregroundColor(.white)
             .fontWeight(.bold)
             
-            Image("profile")
+            Image(photoURL)
                 .resizable()
             Spacer()
 
-          
-          
           Text(description)
             .foregroundColor(.white)
         }
@@ -43,12 +43,12 @@ struct LargeBlock: View {
         .frame(maxWidth: .infinity, alignment: .leading)
       }
       .frame(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.width * 1.1)
-      .background(Color(UIColor.tintColor))
+      .background(Color(UIColor.darkGray))
       .clipShape(RoundedRectangle(cornerRadius: 10))
       .padding(.vertical, 8)
     }
 }
 
 #Preview {
-    LargeBlock(location: "City name example", shopname: "Farm name example", description: "Description example")
+    LargeBlock(location: "City name example", shopname: "Farm name example", description: "Description example", photoURL: "planetgreen")
 }

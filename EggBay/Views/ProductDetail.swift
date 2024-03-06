@@ -31,7 +31,7 @@ struct ProductDetail: View {
                 
                 ForEach(modelData.farms.filter { $0.ID == product.shopID }, id: \.self) { farm in
                     HStack {
-                        LargeBlock(location: farm.location, shopname: farm.name, description: farm.description)
+                        LargeBlock(location: farm.location, shopname: farm.name, description: farm.description, photoURL: farm.photoURL)
                     }
                 }
             }

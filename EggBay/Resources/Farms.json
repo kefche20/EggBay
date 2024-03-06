@@ -4,6 +4,7 @@
    "name": "The Johnsons",
    "location": "Eindhoven",
    "tel": 634646457,
+   "photoURL": "johnsons",
    "description": "The best farm in Eindhoven!"
  },
  {
@@ -11,6 +12,7 @@
    "name": "Vincent's Farm",
    "location": "Veldhoven",
    "tel": 624635776,
+   "photoURL": "vincent",
    "description": "Small, family owned farm in Veldhoven - come and take a look!"
  },
  {
@@ -18,6 +20,7 @@
    "name": "Planet Green",
    "location": "Venlo",
    "tel": 689283948,
+   "photoURL": "planetgreen",
    "description": "Planet Green is the older farm in Venlo, dating back from 1888! Come and see how real food is made!"
  },
  {
@@ -25,6 +28,7 @@
    "name": "Red Apples",
    "location": "Groeningen",
    "tel": 613548023,
+   "photoURL": "redapples",
    "description": "Red Apples specializes in fruits and vegetables for over 50 years - we have the best produce!"
  }
 ]

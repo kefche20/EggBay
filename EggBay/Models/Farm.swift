@@ -12,5 +12,6 @@ struct Farm: Hashable, Codable {
     var name: String
     var location: String
     var tel: Int
+    var photoURL: String
     var description: String
 }

@@ -17,7 +17,7 @@ struct DiscoveryView: View {
                 {
                     ForEach(modelData.farms, id: \.self) { farm in
                         NavigationLink(destination:FarmDetail(farm: farm)) {
-                            LargeBlock(location: farm.location, shopname: farm.name, description: farm.description)
+                            LargeBlock(location: farm.location, shopname: farm.name, description: farm.description, photoURL: farm.photoURL)
                             
                         }}
                 }
