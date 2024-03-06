@@ -12,17 +12,27 @@ struct LoginView: View {
     @State private var isLoggedIn: Bool = false
     var onLoginSuccess: (String) -> Void
     
+    private enum Field: Int, CaseIterable {
+            case username, password
+        }
+    
+    @FocusState private var focusedField: Field?
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("EggBay")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.bottom, 50)
+            
             TextField("Name", text: $viewModel.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .focused($focusedField, equals: .username)
+            
             SecureField("Password", text: $viewModel.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.bottom, 30)
+                .focused($focusedField, equals: .password)
          
             Button {
                 viewModel.login { isLoggedIn in
@@ -36,6 +46,7 @@ struct LoginView: View {
                     }
                     self.isLoggedIn = isLoggedIn
                 }
+                focusedField = nil
             } label: {
                 Text("Login")
                     .frame(maxWidth: .infinity)

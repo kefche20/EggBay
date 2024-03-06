@@ -15,3 +15,8 @@ struct Product: Hashable, Codable {
     var photoURL: String
     var description: String
 }
+
+struct ProductGroup: Hashable {
+    var groupName : String
+    var products : [Product]
+}

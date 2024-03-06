@@ -49,7 +49,7 @@
  },
  {
    "ID": 7,
-   "category": "Fruits",
+   "category": "Fruit",
    "kind": "Pears",
    "shopID": 2,
    "photoURL": "pears",
@@ -57,7 +57,7 @@
  },
  {
    "ID": 8,
-   "category": "Fruits",
+   "category": "Fruit",
    "kind": "Apples",
    "shopID": 2,
    "photoURL": "apples",
@@ -65,7 +65,7 @@
  },
  {
    "ID": 9,
-   "category": "Fruits",
+   "category": "Fruit",
    "kind": "Strawberries",
    "shopID": 4,
    "photoURL": "strawberries",
@@ -73,7 +73,7 @@
  },
  {
    "ID": 10,
-   "category": "Fruits",
+   "category": "Fruit",
    "kind": "Plums",
    "shopID": 4,
    "photoURL": "plums",
@@ -81,7 +81,7 @@
  },
  {
    "ID": 11,
-   "category": "Fruits",
+   "category": "Fruit",
    "kind": "Peaches",
    "shopID": 4,
    "photoURL": "peaches",
@@ -89,7 +89,7 @@
  },
  {
    "ID": 12,
-   "category": "Fruits",
+   "category": "Fruit",
    "kind": "Oranges",
    "shopID": 3,
    "photoURL": "oranges",
