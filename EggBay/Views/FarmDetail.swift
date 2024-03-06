@@ -10,15 +10,49 @@ import MapKit
 
 struct FarmDetail: View {
     @Environment(ModelData.self) var modelData
+    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var favourites = FarmFavourites()
+    @State private var isPresentingConfirm: Bool = false
     let farm: Farm
     
     var body: some View {
+<<<<<<< Updated upstream
         ScrollView(showsIndicators: false){
            LazyVStack(alignment: .leading, spacing: 8) {
                 Text(farm.name)
                     .font(.title)
                     .fontWeight(.bold)
                 
+=======
+        ScrollView(){
+           LazyVStack(alignment: .leading, spacing: 6) {
+               
+               Text(farm.name)
+                   .font(.title)
+                   .fontWeight(.bold)
+               
+               Button(favourites.contains(farm) ? "Remove from fav" : "Add to fav")
+               {
+                   if favourites.contains(farm)
+                   {
+                       isPresentingConfirm = true
+                   }
+                   else
+                   {
+                       favourites.add(farm)
+                   }
+               }
+               .confirmationDialog("Are you sure?",
+                                   isPresented: $isPresentingConfirm) {
+                   Button("Remove from favourites?", role: .destructive) {
+                       favourites.remove(farm)
+                       presentationMode.wrappedValue.dismiss()
+                   }
+               }
+               .buttonStyle(.borderedProminent)
+               .padding()
+
+>>>>>>> Stashed changes
                 Text(farm.description)
                     .font(.body)
                     .foregroundColor(.secondary)
@@ -43,6 +77,7 @@ struct FarmDetail: View {
                 .padding(0)
             }
             .padding()
+            .environmentObject(favourites)
         }
     
     struct LocationMapView: UIViewRepresentable {
