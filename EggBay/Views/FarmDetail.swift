@@ -14,16 +14,7 @@ struct FarmDetail: View {
     @ObservedObject var favourites = FarmFavourites()
     @State private var isPresentingConfirm: Bool = false
     let farm: Farm
-    
     var body: some View {
-<<<<<<< Updated upstream
-        ScrollView(showsIndicators: false){
-           LazyVStack(alignment: .leading, spacing: 8) {
-                Text(farm.name)
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-=======
         ScrollView(){
            LazyVStack(alignment: .leading, spacing: 6) {
                
@@ -52,7 +43,6 @@ struct FarmDetail: View {
                .buttonStyle(.borderedProminent)
                .padding()
 
->>>>>>> Stashed changes
                 Text(farm.description)
                     .font(.body)
                     .foregroundColor(.secondary)
