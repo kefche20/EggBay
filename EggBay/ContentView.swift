@@ -13,22 +13,31 @@ struct ContentView: View {
     @State private var showingLoginMenu = false
     
     var body: some View {
-        
-        VStack {
-            AppMainView()
-        }.onAppear{
-            if !loginViewModel.isLoggedIn
-            {
+        ZStack {
+            AppMainView(viewModel: loginViewModel)
+            
+            if showingLoginMenu {
+                Color(UIColor.systemBackground)
+                    .edgesIgnoringSafeArea(.all)
+                    .onTapGesture {}
+                
+                LoginView(viewModel: loginViewModel) { _ in
+                    showingLoginMenu = false
+                }
+            }
+        }
+        .onAppear {
+            if !loginViewModel.isLoggedIn {
                 showingLoginMenu = true
             }
         }
-        .sheet(isPresented: $showingLoginMenu) {
-            LoginView(viewModel: loginViewModel, onLoginSuccess: {
-                showingLoginMenu = false
-            })        }
     }
 }
-#Preview {
-    ContentView()
-        .environment(ModelData())
-}
+
+
+
+
+//#Preview {
+//    ContentView()
+//        .environment(ModelData())
+//}

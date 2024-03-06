@@ -9,16 +9,16 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject var viewModel: LoginViewModel
-    var onLoginSuccess: () -> Void
+    @State private var isLoggedIn: Bool = false
+    var onLoginSuccess: (String) -> Void
     
     var body: some View {
-        // To be replaced with Sign in with Apple
         VStack(alignment: .leading) {
             Text("EggBay")
                 .font(.largeTitle)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .fontWeight(.bold)
                 .padding(.bottom, 50)
-            TextField("Name", text: $viewModel.name)
+            TextField("Name", text: $viewModel.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             SecureField("Password", text: $viewModel.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -28,12 +28,13 @@ struct LoginView: View {
                 viewModel.login { isLoggedIn in
                     if isLoggedIn {
                         print("Login successful")
-                        onLoginSuccess()
+                        onLoginSuccess(viewModel.username)
                     }
                     else
                     {
                         print("Login failed")
                     }
+                    self.isLoggedIn = isLoggedIn
                 }
             } label: {
                 Text("Login")
@@ -52,10 +53,14 @@ struct LoginView: View {
             .controlSize(.large)
         }
         .padding(30)
-        
+        .sheet(isPresented: $isLoggedIn) {
+            AccountView(username: viewModel.username, onDoneSuccess: {
+                // Handle any action upon dismissing the AccountView
+                isLoggedIn = false
+            })
+        }
         .interactiveDismissDisabled()
     }
-    
 }
 
 //#Preview {

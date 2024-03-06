@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AppMainView: View {
     @Environment(ModelData.self) var modelData
+    @StateObject var viewModel: LoginViewModel
     @State private var showingDetail = false
     @State private var selectedTab: String = "Discovery"
     
@@ -27,7 +28,7 @@ struct AppMainView: View {
                         .frame(width: 40, height: 40)
                         .clipShape(Circle())
                 } .sheet(isPresented:$showingDetail) {
-                    AccountView(onDoneSuccess: {
+                    AccountView(username: viewModel.username, onDoneSuccess: {
                         showingDetail = false
                     })
                 }
@@ -65,6 +66,6 @@ struct AppMainView: View {
     }
 }
 
-#Preview {
-    AppMainView()
-}
+//#Preview {
+//    AppMainView()
+//}
