@@ -7,43 +7,6 @@
 
 import Foundation
 
-//class FarmFavourites: ObservableObject {
-//    private let saveKey = "farmFavs"
-//    
-//    // Use a lazy property for farms and initialize it later
-//    private lazy var farms: Set<Int> = load()
-//    
-//    init() {
-//        // No need to initialize farms here
-//    }
-//    
-//    func contains(_ farm: Farm) -> Bool {
-//        farms.contains(farm.ID)
-//    }
-//    
-//    func add(_ farm: Farm) {
-//        objectWillChange.send()
-//        farms.insert(farm.ID)
-//        save()
-//    }
-//    
-//    func remove(_ farm: Farm) {
-//        objectWillChange.send()
-//        farms.remove(farm.ID)
-//        save()
-//    }
-//    
-//    private func save() {
-//        UserDefaults.standard.set(Array(farms), forKey: saveKey)
-//    }
-//    
-//    private func load() -> Set<Int> {
-//        guard let farmIDs = UserDefaults.standard.array(forKey: saveKey) as? [Int] else {
-//            return []
-//        }
-//        return Set(farmIDs)
-//    }
-//}
 class FarmFavourites: ObservableObject {
     private let saveKey = "farmFavs"
     

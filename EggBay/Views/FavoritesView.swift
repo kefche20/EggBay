@@ -11,6 +11,7 @@ struct FavoritesView: View {
     @ObservedObject var favourites = FarmFavourites()
     @Environment(ModelData.self) var modelData
     @State private var favsChanges = 0
+    
     var body: some View {
         NavigationView {
             ScrollView{

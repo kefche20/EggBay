@@ -28,11 +28,20 @@ struct LoginView: View {
             TextField("Name", text: $viewModel.username)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .focused($focusedField, equals: .username)
+                .overlay(
+                      RoundedRectangle(cornerRadius: 5)
+                          .stroke(Color(UIColor.tertiaryLabel), lineWidth: 1)
+                  )
             
             SecureField("Password", text: $viewModel.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(.bottom, 30)
                 .focused($focusedField, equals: .password)
+                .overlay(
+            RoundedRectangle(cornerRadius: 5)
+                .stroke(Color(UIColor.tertiaryLabel), lineWidth: 1)
+        )
+  
+                .padding(.bottom, 30)
          
             Button {
                 viewModel.login { isLoggedIn in

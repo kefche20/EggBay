@@ -38,20 +38,6 @@ struct CategoriesView: View {
     }
 }
 
-
-//NavigationStack {
-//           List {
-//               ForEach(productGroups) {productGroup in
-//                   Section(header: Text(productGroup.groupName)) {
-//                       ForEach(modelData.products, id: \.self) { product in
-//                           NavigationLink {
-//                               ProductDetail(product: product)
-//                           } label: {
-//                               ProductRow(product: product)
-//                           }
-//                       }
-//                   }
-
 #Preview {
     CategoriesView()
         .environment(ModelData())

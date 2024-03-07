@@ -14,35 +14,28 @@ struct FarmDetail: View {
     @ObservedObject var favourites = FarmFavourites()
     @State private var isPresentingConfirm: Bool = false
     let farm: Farm
+    
     var body: some View {
-        ScrollView(){
-           LazyVStack(alignment: .leading, spacing: 6) {
-               
-               Text(farm.name)
-                   .font(.title)
-                   .fontWeight(.bold)
-               
-               Button(favourites.contains(farm) ? "Remove from fav" : "Add to fav")
-               {
-                   if favourites.contains(farm)
-                   {
-                       isPresentingConfirm = true
-                   }
-                   else
-                   {
-                       favourites.add(farm)
-                   }
-               }
-               .confirmationDialog("Are you sure?",
-                                   isPresented: $isPresentingConfirm) {
-                   Button("Remove from favourites?", role: .destructive) {
-                       favourites.remove(farm)
-                       presentationMode.wrappedValue.dismiss()
-                   }
-               }
-               .buttonStyle(.borderedProminent)
-               .padding()
-
+        ScrollView() {
+            LazyVStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Text(farm.name)
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Button(action: {
+                        if favourites.contains(farm) {
+                            isPresentingConfirm = true
+                        } else {
+                            favourites.add(farm)
+                        }
+                    }) {
+                        Image(systemName: favourites.contains(farm) ? "heart.fill" : "heart")
+                            .foregroundColor(favourites.contains(farm) ? .red : Color(UIColor.label))
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
+                }
+                
                 Text(farm.description)
                     .font(.body)
                     .foregroundColor(.secondary)
@@ -51,24 +44,30 @@ struct FarmDetail: View {
                     .frame(height: 200)
                     .cornerRadius(10)
                     .padding(.bottom, 16)
-               
-               Spacer()
-               
-               ForEach(modelData.products.filter { $0.shopID == farm.ID }, id: \.self) { product in
-                        
-                        NavigationLink(destination: ProductDetail(product: product)) {
-                                HStack{
-                                    ProductRow(product: product)
-                                    Image(systemName: "chevron.right")
-                                }.contentShape(Rectangle())                
-                            }
+                
+                Spacer()
+                
+                ForEach(modelData.products.filter { $0.shopID == farm.ID }, id: \.self) { product in
+                    NavigationLink(destination: ProductDetail(product: product)) {
+                        HStack{
+                            ProductRow(product: product)
+                            Image(systemName: "chevron.right")
+                        }.contentShape(Rectangle())
                     }
-                }.scaledToFit()
-                .padding(0)
+                }
             }
-            .padding()
-            .environmentObject(favourites)
+            .scaledToFit()
+            .padding(0)
         }
+        .padding()
+        .environmentObject(favourites)
+        .confirmationDialog("Are you sure?", isPresented: $isPresentingConfirm) {
+            Button("Remove from favorites", role: .destructive) {
+                favourites.remove(farm)
+                presentationMode.wrappedValue.dismiss()
+            }
+        }
+    }
     
     struct LocationMapView: UIViewRepresentable {
         let location: String

@@ -15,7 +15,7 @@ struct AccountView: View {
         NavigationStack {
             List {
                 Section {
-                    ProfileNavigationLink(username: username, email: "plsfix@me.com")
+                    ProfileNavigationLink(username: username, email: "email@me.com")
                 }
             }
             .navigationBarTitle("Account", displayMode: .inline)

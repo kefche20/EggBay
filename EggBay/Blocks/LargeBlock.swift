@@ -25,11 +25,12 @@ struct LargeBlock: View {
         VStack(alignment: .leading) {
           Text(location)
             .font(.headline)
-            .foregroundColor(.secondary)
+            .foregroundColor(Color(UIColor.label))
+            .opacity(0.5)
           
           Text(shopname)
             .font(.title)
-            .foregroundColor(.white)
+            .foregroundColor(Color(UIColor.label))
             .fontWeight(.bold)
             
             Image(photoURL)
@@ -37,13 +38,18 @@ struct LargeBlock: View {
             Spacer()
 
           Text(description)
-            .foregroundColor(.white)
+                .foregroundColor(Color(UIColor.label))
+                .opacity(0.8)
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
       }
       .frame(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.width * 1.1)
-      .background(Color(UIColor.darkGray))
+      .background(
+//        LinearGradient(gradient: Gradient(colors: [.blue, .teal]), startPoint: .leading, endPoint: .trailing)
+        Color(UIColor.secondarySystemBackground)
+            .opacity(0.9)
+          )
       .clipShape(RoundedRectangle(cornerRadius: 10))
       .padding(.vertical, 8)
     }
