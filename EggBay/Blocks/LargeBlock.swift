@@ -20,6 +20,8 @@ struct LargeBlock: View {
         self.photoURL = photoURL
     }
     
+    private var readyOrder = false
+    
     var body: some View {
       ZStack(alignment: .leading) {
         VStack(alignment: .leading) {
@@ -27,12 +29,24 @@ struct LargeBlock: View {
             .font(.headline)
             .foregroundColor(Color(UIColor.label))
             .opacity(0.5)
-          
-          Text(shopname)
-            .font(.title)
-            .foregroundColor(Color(UIColor.label))
-            .fontWeight(.bold)
             
+            if readyOrder {
+                HStack {
+                    Image(systemName: "circle.fill")
+                        .foregroundColor(.blue)
+                    Text(shopname)
+                        .font(.title)
+                        .foregroundColor(Color(UIColor.label))
+                        .fontWeight(.bold)
+                }
+            } else {
+                Text(shopname)
+                    .font(.title)
+                    .foregroundColor(Color(UIColor.label))
+                    .fontWeight(.bold)
+            }
+           
+          
             Image(photoURL)
                 .resizable()
             Spacer()
@@ -40,13 +54,14 @@ struct LargeBlock: View {
           Text(description)
                 .foregroundColor(Color(UIColor.label))
                 .opacity(0.8)
+                .multilineTextAlignment(.leading)
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
       }
       .frame(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.width * 1.1)
       .background(
-//        LinearGradient(gradient: Gradient(colors: [.blue, .teal]), startPoint: .leading, endPoint: .trailing)
+
         Color(UIColor.secondarySystemBackground)
             .opacity(0.9)
           )

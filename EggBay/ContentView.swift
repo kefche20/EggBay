@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            AppMainView(viewModel: loginViewModel)
+                AppMainView(viewModel: loginViewModel)
             
             if showingLoginMenu {
                 Color(UIColor.systemBackground)

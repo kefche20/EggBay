@@ -14,53 +14,55 @@ struct AppMainView: View {
     @State private var selectedTab: String = "Discovery"
     
     var body: some View {
-        VStack {
-            HStack(spacing:30) {
-                Text(selectedTab)
-                    .font(.title.bold())
-                Spacer()
-                Button {
-                    showingDetail = true
-                } label: {
-                    Image("profile")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 40, height: 40)
-                        .clipShape(Circle())
-                } .sheet(isPresented:$showingDetail) {
-                    AccountView(username: viewModel.username, onDoneSuccess: {
-                        showingDetail = false
-                    })
+            VStack {
+                HStack(spacing:30) {
+                    Text(selectedTab)
+                        .font(.title.bold())
+                    Spacer()
+                    Button {
+                        showingDetail = true
+                    } label: {
+                        Image("profile")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 40, height: 40)
+                            .clipShape(Circle())
+                    } .sheet(isPresented:$showingDetail) {
+                        AccountView(username: viewModel.username, onDoneSuccess: {
+                            showingDetail = false
+                        })
+                    }
                 }
-            }
-            .padding(.horizontal)
-            
-            TabView(selection: $selectedTab){
-                DiscoveryView()
-                    .tabItem { Label("Discovery", systemImage: "safari") }
-                    .tag("Discovery")
+                .padding(.horizontal)
                 
-                CategoriesView()
-                    .tabItem { Label("Categories", systemImage: "list.dash") }
-                    .tag("Categories")
                 
-                EventsView()
-                    .tabItem { Label("Events", systemImage: "calendar") }
-                    .tag("Events")
-                
-                FavoritesView()
-                    .tabItem { Label("Favorites", systemImage: "heart") }
-                    .tag("Favorites")
-                
-                OrdersView()
-                    .tabItem { Label("Orders", systemImage: "truck.box") }
-                    .tag("Orders")
-            }
-            .onAppear {
-                if #available(iOS 15.0, *) {
-                    let appearance = UITabBarAppearance()
-                    UITabBar.appearance().scrollEdgeAppearance = appearance
+                TabView(selection: $selectedTab){
+                    DiscoveryView()
+                        .tabItem { Label("Discovery", systemImage: "safari") }
+                        .tag("Discovery")
+                    
+                    CategoriesView()
+                        .tabItem { Label("Categories", systemImage: "list.dash") }
+                        .tag("Categories")
+                    
+                    EventsView()
+                        .tabItem { Label("Events", systemImage: "calendar") }
+                        .tag("Events")
+                    
+                    FavoritesView()
+                        .tabItem { Label("Favorites", systemImage: "heart") }
+                        .tag("Favorites")
+                    
+                    OrdersView()
+                        .tabItem { Label("Orders", systemImage: "truck.box") }
+                        .tag("Orders")
+                        .badge(1)
                 }
+                .onAppear {
+                    if #available(iOS 15.0, *) {
+                        let appearance = UITabBarAppearance()
+                        UITabBar.appearance().scrollEdgeAppearance = appearance
+                    }
             }
         }
     }
