@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct OrdersView: View {
+    @StateObject var viewModel: LoginViewModel
+    var selectedTab: Binding<String>
+    
     var body: some View {
         NavigationStack {
             List {
                 Section(header: Text("In Progress")) {
-                    NavigationLink(destination:OrderInfoView()) {
+                    NavigationLink(destination: OrderDetail()) {
                         HStack {
                             VStack (alignment: .leading) {
                                 Text("Tomatoes")
@@ -49,10 +52,13 @@ struct OrdersView: View {
                     }
                 }
             }
+            .toolbar {
+                ToolbarHeader(viewModel: viewModel, selectedTab: selectedTab)
+            }
         }
     }
 }
 
-#Preview {
-    OrdersView()
-}
+//#Preview {
+//    OrdersView()
+//}

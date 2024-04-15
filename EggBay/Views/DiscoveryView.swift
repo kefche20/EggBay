@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct DiscoveryView: View {
+    @StateObject var viewModel: LoginViewModel
     @Environment(ModelData.self) var modelData
+    var selectedTab: Binding<String>
 
     var body: some View {
         NavigationStack {
@@ -23,7 +25,9 @@ struct DiscoveryView: View {
                     }
                 }
             }
-            
+            .toolbar {
+                ToolbarHeader(viewModel: viewModel, selectedTab: selectedTab)
+            } 
         }
     }
 }

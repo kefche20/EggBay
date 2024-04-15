@@ -41,12 +41,3 @@ struct ProductDetail: View {
         .padding()
     }
 }
-
-
-
-//#Preview {
-//    let products = ModelData().products
-//    return Group {
-//        ProductDetail(product: products[0])
-//    }
-//}

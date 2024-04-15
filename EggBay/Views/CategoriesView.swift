@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CategoriesView: View {
     @Environment(ModelData.self) var modelData
+    @StateObject var viewModel: LoginViewModel
+    var selectedTab: Binding<String>
     
     var productGroups: [ProductGroup] {
            [
@@ -34,11 +36,14 @@ struct CategoriesView: View {
                     }.headerProminence(.increased)
                 }
             }
+            .toolbar {
+                ToolbarHeader(viewModel: viewModel, selectedTab: selectedTab)
+            }
         }
     }
 }
 
-#Preview {
-    CategoriesView()
-        .environment(ModelData())
-}
+//#Preview {
+//    CategoriesView()
+//        .environment(ModelData())
+//}

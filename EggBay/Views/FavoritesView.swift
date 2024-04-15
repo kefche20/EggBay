@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    @StateObject var viewModel: LoginViewModel
     @ObservedObject var favourites = FarmFavourites()
     @Environment(ModelData.self) var modelData
     @State private var favsChanges = 0
+    var selectedTab: Binding<String>
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView{
                 VStack(alignment: .leading)
                 {
@@ -36,11 +38,14 @@ struct FavoritesView: View {
                     favsChanges+=1
                 }
             }
+            .toolbar {
+                ToolbarHeader(viewModel: viewModel, selectedTab: selectedTab)
+            }
         }
         .environmentObject(favourites)
     }
 }
 
-#Preview {
-    FavoritesView()
-}
+//#Preview {
+//    FavoritesView()
+//}
