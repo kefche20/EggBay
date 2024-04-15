@@ -30,22 +30,10 @@ struct LargeBlock: View {
             .foregroundColor(Color(UIColor.label))
             .opacity(0.5)
             
-            if readyOrder {
-                HStack {
-                    Image(systemName: "circle.fill")
-                        .foregroundColor(.blue)
-                    Text(shopname)
-                        .font(.title)
-                        .foregroundColor(Color(UIColor.label))
-                        .fontWeight(.bold)
-                }
-            } else {
                 Text(shopname)
                     .font(.title)
                     .foregroundColor(Color(UIColor.label))
                     .fontWeight(.bold)
-            }
-           
           
             Image(photoURL)
                 .resizable()
@@ -61,7 +49,6 @@ struct LargeBlock: View {
       }
       .frame(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.width * 1.1)
       .background(
-
         Color(UIColor.secondarySystemBackground)
             .opacity(0.9)
           )

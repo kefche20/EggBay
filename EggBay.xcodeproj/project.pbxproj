@@ -13,6 +13,7 @@
 		220915082B861FE30092292A /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915072B861FE30092292A /* EventsView.swift */; };
 		2209150A2B861FEB0092292A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220915092B861FEB0092292A /* FavoritesView.swift */; };
 		2209150C2B861FF20092292A /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209150B2B861FF20092292A /* OrdersView.swift */; };
+		2231EF692BC8228000E643F6 /* OrderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231EF682BC8228000E643F6 /* OrderInfoView.swift */; };
 		227C4DC42B875FEA002D5F65 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C4DC32B875FEA002D5F65 /* ProductRow.swift */; };
 		22CE75352B95F5470064FCAD /* Farms.json in Resources */ = {isa = PBXBuildFile; fileRef = 22CE75342B95F5470064FCAD /* Farms.json */; };
 		22CE75372B95F55B0064FCAD /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 22CE75362B95F55B0064FCAD /* Products.json */; };
@@ -43,6 +44,7 @@
 		220915072B861FE30092292A /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		220915092B861FEB0092292A /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		2209150B2B861FF20092292A /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		2231EF682BC8228000E643F6 /* OrderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoView.swift; sourceTree = "<group>"; };
 		227C4DC32B875FEA002D5F65 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		22CE75342B95F5470064FCAD /* Farms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Farms.json; sourceTree = "<group>"; };
 		22CE75362B95F55B0064FCAD /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				227C4DC32B875FEA002D5F65 /* ProductRow.swift */,
 				22CE753D2B9601DF0064FCAD /* ProductDetail.swift */,
 				93AB32282B9604940026CE37 /* FarmDetail.swift */,
+				2231EF682BC8228000E643F6 /* OrderInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				227C4DC42B875FEA002D5F65 /* ProductRow.swift in Sources */,
 				9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */,
 				220915062B861FD80092292A /* CategoriesView.swift in Sources */,
+				2231EF692BC8228000E643F6 /* OrderInfoView.swift in Sources */,
 				9330D7662B862A60008E1FF4 /* MainViewModel.swift in Sources */,
 				2209150A2B861FEB0092292A /* FavoritesView.swift in Sources */,
 				2209150C2B861FF20092292A /* OrdersView.swift in Sources */,
