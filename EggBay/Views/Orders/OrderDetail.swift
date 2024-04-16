@@ -22,12 +22,19 @@ struct OrderDetail: View {
                 }
                 .padding(.vertical, 30)
                 
-                
+                Image(order.photoURL)
+                    .resizable()
+                    .frame(maxWidth: .infinity ,maxHeight: 200)
+                    .cornerRadius(5)
+                    .padding(.bottom, 20)
                 
                 Text("You can pick up your products at this location:")
                     .font(.subheadline)
                 Map()
                     .frame(height: 200)
+                    .cornerRadius(5)
+                
+               
             }
             .padding()
         }

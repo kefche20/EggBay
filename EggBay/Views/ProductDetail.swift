@@ -14,9 +14,16 @@ struct ProductDetail: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             LazyVStack(alignment: .leading, spacing: 8) {
-                Text(product.kind)
-                    .font(.title)
-                    .fontWeight(.bold)
+                HStack {
+                    Text(product.kind)
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                    Button ("Order") {
+                        print("Order")
+                    }.buttonStyle(.borderedProminent)
+                }.padding(.bottom, 10)
+              
                 
                 Text(product.description)
                     .font(.body)
