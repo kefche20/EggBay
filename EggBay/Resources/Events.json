@@ -1,0 +1,41 @@
+[
+ {
+   "ID": 1,
+   "day_of_week" : 7,
+   "is_repeating" : true,
+   "name": "FeelGood Market",
+   "location": "Ketelhuisplein, Eindhoven",
+   "photoURL": "johnsons",
+   "description": "The FeelGood Market is a vibrant market full of design, fashion, vintage, delicious food and much more. Every third Sunday of the month at Strijp-S!"
+   
+ },
+ {
+   "ID": 2,
+   "day_of_week" : 6,
+   "is_repeating" : true,
+   "name": "Woenselse Market",
+   "location": "Woenselse Markt, Eindhoven",
+   "photoURL": "johnsons",
+   "description": "The Market at the Woenselse Markt is from 10.00 to 17.00 every Saturday."
+   
+ },
+ {
+   "ID": 3,
+   "day_of_week" : 7,
+   "is_repeating" : true,
+   "name": "FleaGood Market",
+   "location": "P+R Genneper Parken",
+   "photoURL": "johnsons",
+   "description": "The even more sustainable sister of the FeelGood Market with even more vintage, delicious snacks from all around the world and finger-licking good live music!"
+   
+ },
+ {
+   "ID": 4,
+   "day_of_week" : 2,
+   "is_repeating" : true,
+   "name": "Frederik Market",
+   "location": "Frederik van Eedenplein, Eindhoven",
+   "photoURL": "johnsons",
+   "description": "Enjoy a chill Tuesday with amazing food & music - and have some fun!"
+ }
+]

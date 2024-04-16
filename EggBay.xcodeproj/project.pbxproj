@@ -21,10 +21,10 @@
 		22CE753A2B95F7BC0064FCAD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE75392B95F7BC0064FCAD /* ModelData.swift */; };
 		22CE753C2B95F80E0064FCAD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE753B2B95F80E0064FCAD /* Product.swift */; };
 		22CE753E2B9601DF0064FCAD /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE753D2B9601DF0064FCAD /* ProductDetail.swift */; };
-		930C3B922BCE66FC00303F8D /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 930C3B912BCE66FC00303F8D /* Events.json */; };
 		930C3B942BCE6CFE00303F8D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930C3B932BCE6CFE00303F8D /* Event.swift */; };
 		930C3B962BCE70EE00303F8D /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930C3B952BCE70EE00303F8D /* EventDetail.swift */; };
 		930C3B9C2BCE8E1100303F8D /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930C3B9B2BCE8E1100303F8D /* OrderDetail.swift */; };
+		930C3B9E2BCE98F500303F8D /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 930C3B9D2BCE98F500303F8D /* Events.json */; };
 		9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7492B861876008E1FF4 /* EggBayApp.swift */; };
 		9330D74C2B861876008E1FF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D74B2B861876008E1FF4 /* ContentView.swift */; };
 		9330D74E2B861877008E1FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330D74D2B861877008E1FF4 /* Assets.xcassets */; };
@@ -57,10 +57,10 @@
 		22CE75392B95F7BC0064FCAD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		22CE753B2B95F80E0064FCAD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		22CE753D2B9601DF0064FCAD /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
-		930C3B912BCE66FC00303F8D /* Events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Events.json; path = ../../../../../Desktop/Events.json; sourceTree = "<group>"; };
 		930C3B932BCE6CFE00303F8D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		930C3B952BCE70EE00303F8D /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 		930C3B9B2BCE8E1100303F8D /* OrderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderDetail.swift; path = ../../../../../../Desktop/OrderDetail.swift; sourceTree = "<group>"; };
+		930C3B9D2BCE98F500303F8D /* Events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Events.json; sourceTree = "<group>"; };
 		9330D7462B861876008E1FF4 /* EggBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9330D7492B861876008E1FF4 /* EggBayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggBayApp.swift; sourceTree = "<group>"; };
 		9330D74B2B861876008E1FF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		22CE75382B95F5600064FCAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				930C3B912BCE66FC00303F8D /* Events.json */,
+				930C3B9D2BCE98F500303F8D /* Events.json */,
 				22CE75362B95F55B0064FCAD /* Products.json */,
 				22CE75342B95F5470064FCAD /* Farms.json */,
 			);
@@ -270,7 +270,7 @@
 			files = (
 				22CE75372B95F55B0064FCAD /* Products.json in Resources */,
 				9330D7512B861877008E1FF4 /* Preview Assets.xcassets in Resources */,
-				930C3B922BCE66FC00303F8D /* Events.json in Resources */,
+				930C3B9E2BCE98F500303F8D /* Events.json in Resources */,
 				22CE75352B95F5470064FCAD /* Farms.json in Resources */,
 				9330D74E2B861877008E1FF4 /* Assets.xcassets in Resources */,
 			);
