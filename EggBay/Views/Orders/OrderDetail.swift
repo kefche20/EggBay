@@ -9,14 +9,16 @@ import SwiftUI
 import MapKit
 
 struct OrderDetail: View {
+    let order: Order
+    
     var body: some View {
         ScrollView (showsIndicators: false) {
             LazyVStack (alignment: .leading) {
-                ProgressView(value: 1) {
-                    Text("Tomatoes")
+                ProgressView(value: order.progressValue) {
+                    Text(order.name)
                         .font(.headline)
                 } currentValueLabel: {
-                    Text("Order is awaiting pickup!")
+                    Text(order.description)
                 }
                 .padding(.vertical, 30)
                 
@@ -31,8 +33,4 @@ struct OrderDetail: View {
         }
    
     }
-}
-
-#Preview {
-    OrderDetail()
 }
