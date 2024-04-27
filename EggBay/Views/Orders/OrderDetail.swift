@@ -33,11 +33,8 @@ struct OrderDetail: View {
                 Map()
                     .frame(height: 200)
                     .cornerRadius(5)
-                
-               
             }
             .padding()
         }
-   
     }
 }

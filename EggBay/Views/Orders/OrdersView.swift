@@ -48,7 +48,6 @@ struct OrdersView: View {
                 ToolbarHeader(viewModel: viewModel, selectedTab: selectedTab)
             }
         }
-       
     }
 }
 

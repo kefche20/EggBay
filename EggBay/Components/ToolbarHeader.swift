@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ToolbarHeader: ToolbarContent {
-        @StateObject var viewModel: LoginViewModel
-        @State private var showingDetail = false
+    @StateObject var viewModel: LoginViewModel
+    @State private var showingDetail = false
     @Binding var selectedTab: String
     
     var body: some ToolbarContent {

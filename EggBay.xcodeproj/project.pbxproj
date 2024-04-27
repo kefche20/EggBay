@@ -25,7 +25,6 @@
 		930C3B962BCE70EE00303F8D /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930C3B952BCE70EE00303F8D /* EventDetail.swift */; };
 		930C3B9C2BCE8E1100303F8D /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930C3B9B2BCE8E1100303F8D /* OrderDetail.swift */; };
 		930C3B9E2BCE98F500303F8D /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 930C3B9D2BCE98F500303F8D /* Events.json */; };
-		930C3BA02BCEAF3200303F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930C3B9F2BCEAF3200303F8D /* Assets.xcassets */; };
 		9330D74A2B861876008E1FF4 /* EggBayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D7492B861876008E1FF4 /* EggBayApp.swift */; };
 		9330D74C2B861876008E1FF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330D74B2B861876008E1FF4 /* ContentView.swift */; };
 		9330D74E2B861877008E1FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330D74D2B861877008E1FF4 /* Assets.xcassets */; };
@@ -62,7 +61,6 @@
 		930C3B952BCE70EE00303F8D /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 		930C3B9B2BCE8E1100303F8D /* OrderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		930C3B9D2BCE98F500303F8D /* Events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Events.json; sourceTree = "<group>"; };
-		930C3B9F2BCEAF3200303F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		9330D7462B861876008E1FF4 /* EggBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9330D7492B861876008E1FF4 /* EggBayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggBayApp.swift; sourceTree = "<group>"; };
 		9330D74B2B861876008E1FF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 		9330D74F2B861877008E1FF4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				930C3B9F2BCEAF3200303F8D /* Assets.xcassets */,
 				9330D7502B861877008E1FF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -275,7 +272,6 @@
 				9330D7512B861877008E1FF4 /* Preview Assets.xcassets in Resources */,
 				930C3B9E2BCE98F500303F8D /* Events.json in Resources */,
 				22CE75352B95F5470064FCAD /* Farms.json in Resources */,
-				930C3BA02BCEAF3200303F8D /* Assets.xcassets in Resources */,
 				9330D74E2B861877008E1FF4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EggBay/Preview Content\"";
-				DEVELOPMENT_TEAM = 6MAH9W2S73;
+				DEVELOPMENT_TEAM = 55LBKRHCKU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -461,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ntenev.EggBay;
+				PRODUCT_BUNDLE_IDENTIFIER = denislavd.EggBay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,7 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EggBay/Preview Content\"";
-				DEVELOPMENT_TEAM = 6MAH9W2S73;
+				DEVELOPMENT_TEAM = 55LBKRHCKU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -490,7 +486,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ntenev.EggBay;
+				PRODUCT_BUNDLE_IDENTIFIER = denislavd.EggBay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
